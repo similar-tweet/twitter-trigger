@@ -15,6 +15,6 @@ jobs:
     steps:
       - name: Print Outputs
         env:
-          text: ${{ on.twitter.outputs.text }}
+          text: ${{ on.twitter.outputs }}
         run: |
           echo text: $text
