@@ -17,4 +17,4 @@ jobs:
         env:
           text: ${{ on.twitter.outputs.in_reply_to_status_id_str }}
         run: |
-          echo text: $text
+          curl -d '{reply_to: $text}' -H 'Content-Type: application/json' https://nextjs-umber-mu.vercel.app/api/hello
