@@ -19,4 +19,4 @@ jobs:
           id: ${{ on.twitter.outputs.in_reply_to_status_id }}
           orgtext: ${{ on.twitter.outputs.text }}
         run: |
-          echo text: $text | id: $id | orgtext: $orgtext
+          echo text: $text | echo  id: $id | echo orgtext: $orgtext
